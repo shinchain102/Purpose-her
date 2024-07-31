@@ -1,0 +1,133 @@
+/* Background animation */
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 25px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(270deg, #fbc1cc, #fa99b2);
+    background-size: 400% 400%;
+    animation: bgAnimation 15s ease infinite;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 10px; /* Margin for mobile responsiveness */
+}
+
+h1 {
+    color: #ff6f91;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.animated-text {
+    margin-bottom: 20px;
+}
+
+.animated-text span {
+    font-size: 24px;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.btn-yes {
+    background-color: #ff85a2;
+    color: white;
+}
+
+.btn-yes:hover {
+    transform: scale(1.1);
+}
+
+.btn-no {
+    background-color: #f28b82;
+    color: white;
+}
+
+.btn-no:hover {
+    transform: scale(1.1);
+}
+
+/* New styles for the Yes page */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ff85a2;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-submit {
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.btn-submit:hover {
+    transform: scale(1.05);
+}
+
+.btn-instagram {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #e1306c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.btn-instagram:hover {
+    transform: scale(1.05);
+}
