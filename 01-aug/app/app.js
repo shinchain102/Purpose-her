@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('#magic-button').click(function() {
         Swal.fire({
             title: 'A Secret Confession',
-            text: "I saw you today while you were walking to the office. I threw the pen at you during attendance because I was nervous. 😊",
+            text: "I saw you today while you were walking to the office & meko thoda nervous feel ho rha tha to isliye attendance lgate wqt maine pen apki trf feka or chla aya chupchap. 😅🥲",
             icon: 'info',
             confirmButtonText: 'Aww, that\'s sweet!'
         });
