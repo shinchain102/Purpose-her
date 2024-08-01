@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('path/to/rose-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #ff5e78;
+    font-family: 'Dancing Script', cursive;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+    height: 300px; /* Set a fixed height */
+    overflow: hidden; /* Hide any overflow content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.animated-text {
+    font-size: 46px;
+    color: #ff5e78;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5e78;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e44e68;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
