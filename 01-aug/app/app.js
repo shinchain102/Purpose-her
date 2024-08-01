@@ -1,7 +1,12 @@
 $(document).ready(function() {
+    // Unmute the audio after a short delay
+    setTimeout(function() {
+        document.getElementById('background-music').muted = false;
+    }, 2000); // Adjust delay as needed
+
     setTimeout(function() {
         confettiEffect();
-        $('.step1').fadeIn(2000).delay(4000).fadeOut(2000, function() {
+        $('.step1').addClass('visible').delay(4000).fadeOut(2000, function() {
             $('.step2').fadeIn(2000);
             $('#magic-button').fadeIn(2000);
         });
@@ -19,7 +24,7 @@ $(document).ready(function() {
 
 function confettiEffect() {
     confetti({
-        particleCount: 300,
+        particleCount: 100,
         spread: 70,
         origin: { y: 0.6 }
     });
